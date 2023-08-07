@@ -55,3 +55,39 @@ int main() {
 
 
 
+
+
+// comparision of using union instead of structures
+#include <stdio.h>
+typedef union {
+    int a ;
+    char b ;
+    double c ;  //size of union 8 bytes
+} data ;        
+int main() {
+    data arr[10];
+    arr[0].a = 10 ;    //size = 80 bytes
+    arr[1].b = 'a' ;
+    arr[2].c = 10.178 ;
+    
+
+    return 0;
+}
+
+typedef struct{
+    int a ;
+    char b ;
+    double c;       // size of this structure is 13 byte
+}data ;
+int main () 
+{
+    data arr[10];
+    arr[0].a = 10 ;     //size 130 bytes
+    arr[1].b = 'a' ;
+    arr[2].c = 10.178 ;
+}
+
+
+
+
+
