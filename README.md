@@ -107,3 +107,23 @@ int main() {
     printf("%d", var);
     return 0;
 }
+
+
+
+
+
+
+
+// find the o/p >> 0 0 0
+#include <stdio.h>
+
+int main() {
+    enum point {x = 0, y = 0, z = 0};
+    printf("%d %d %d", x, y, z);
+    return 0;
+}
+
+
+
+
+
