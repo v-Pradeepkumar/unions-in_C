@@ -91,3 +91,19 @@ int main ()
 
 
 
+
+
+                    
+                       ** ENUMERATION**
+
+                        
+// enumerator is also a user defined type which is used to assign names to integral constants because names are easier to handle in program. o/p >> 1
+
+#include <stdio.h>
+enum Bool {false , true};
+int main() {
+    enum Bool var ;
+    var = true ;
+    printf("%d", var);
+    return 0;
+}
