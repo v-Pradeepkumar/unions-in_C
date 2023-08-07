@@ -193,3 +193,50 @@ int main() {
     printf("Area of rectangle: %d", area(r));
     return 0;
 }
+
+
+
+
+
+
+
+
+// solved problem for compare atructure and union. o/p >> 20 16
+
+#include<stdio.h>
+#pragma pack(1)
+
+struct s{
+    double a ;
+     union{
+        char b[4] ;
+        double c ;
+        int d ;
+
+            }e ;
+          char f[4] ;
+}s ;
+
+union u{
+    double a ;
+    struct{
+        char b[4] ;
+        double c ;
+        int d ;
+    }e ;
+    char f[4] ;
+}u ;
+int main() {
+    printf("%d %d", sizeof(s), sizeof(u));
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
