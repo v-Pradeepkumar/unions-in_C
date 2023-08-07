@@ -127,3 +127,16 @@ int main() {
 
 
 
+// find the o/p >> 0 0 0 1 
+#include <stdio.h>
+
+int main() {
+    enum point {x = 0, c, y = 0, z = 0};
+    printf("%d %d %d %d", x, y, z, c);      //in enum any var get value +1 of before variable
+    return 0;
+}
+
+
+
+
+
