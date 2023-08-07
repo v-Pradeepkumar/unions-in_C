@@ -140,3 +140,17 @@ int main() {
 
 
 
+// find the o/p >> integer error
+#include <stdio.h>
+
+int main() {
+    enum point {x = 0, y = 2.5, z = 0};
+    printf("%d %d %d ", x, y, z);      //only integral values are allowed(integer only)
+    return 0;
+}
+
+
+
+
+
+
