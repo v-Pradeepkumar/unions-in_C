@@ -31,3 +31,27 @@ int main() {
      printf("%d %c", p-> a, p->b);
      return 0;
 }
+
+
+
+
+
+
+// find the size of union short > 2 bytes, float > 4 bytes, long > 8 bytes  o/p is 18 bytes
+#include <stdio.h>
+
+int main() {
+    struct{
+        short s[5] ;
+        union {
+            float y ;
+            long z ;
+        }u ;
+    } t ;
+
+    return 0;
+}
+
+
+
+
